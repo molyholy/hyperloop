@@ -1,17 +1,18 @@
 import React, { Component } from "react";
 //import logo from "./logo.svg";
 import "./App.scss";
-import { Button } from "carbon-components-react";
 import { Content } from "carbon-components-react/lib/components/UIShell";
 import StudioHeader from "./components/StudioHeader";
+import MainPage from "./components/MainPage";
 
 class App extends Component {
   render() {
     return (
       <>
         <StudioHeader />
+
         <Content>
-          <Button>Button</Button>
+          <MainPage />
         </Content>
       </>
     );
