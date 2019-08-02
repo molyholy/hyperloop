@@ -3,7 +3,7 @@ import HeaderContainer from "carbon-components-react/lib/components/UIShell/Head
 import Search20 from "@carbon/icons-react/lib/search/20";
 import Notification20 from "@carbon/icons-react/lib/notification/20";
 import AppSwitcher20 from "@carbon/icons-react/lib/app-switcher/20";
-import { Dropdown } from "carbon-components-react";
+import { Dropdown, Breadcrumb, BreadcrumbItem } from "carbon-components-react";
 import {
   Header,
   HeaderName,

@@ -1,14 +1,14 @@
-//@import "carbon-components/scss/globals/scss/vendor/@carbon/type/scss/font-family.scss";
-// @import "carbon-components/scss/globals/scss/vendor/@carbon/layout/scss/breakpoint.scss";
-// @import "carbon-components/scss/globals/scss/typography.scss";
-// @import "carbon-components/scss/globals/scss/vars.scss";
-// @import "carbon-components/scss/globals/scss/styles.scss";
+@import "carbon-components/scss/globals/scss/vendor/@carbon/type/scss/font-family.scss";
+@import "carbon-components/scss/globals/scss/vendor/@carbon/layout/scss/breakpoint.scss";
+@import "carbon-components/scss/globals/scss/typography.scss";
+@import "carbon-components/scss/globals/scss/vars.scss";
+@import "carbon-components/scss/globals/scss/styles.scss";
 
 @import "./components/StudioHeader/studioheader.scss";
 @import "./components/MainPage/main-page.scss";
 
 .bx--content {
-  padding: 20px;
+  margin-top: 20px;
 }
 
 .App {
