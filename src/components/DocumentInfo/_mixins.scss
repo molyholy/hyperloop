@@ -1,0 +1,34 @@
+@mixin document-title-background() {
+  background-color: $ui-01;
+  position: relative;
+
+  &::before {
+    //appends parent => parent::before which is the standard use of ::before
+    content: "";
+    position: absolute;
+    left: -$spacing-06 * 2;
+    top: 0;
+    right: -$spacing-05;
+    bottom: 0;
+    background: $ui-01;
+    z-index: -1;
+  }
+}
+
+@mixin document-title-bottom-border() {
+  border-bottom: $spacing-01 solid $ui-03;
+  position: relative;
+
+  &::before {
+    //appends parent => parent::before which is the standard use of ::before
+    content: "";
+    position: absolute;
+    left: -$spacing-07 * 2;
+    top: 0;
+    right: -$spacing-05;
+    bottom: -2px;
+    background: $ui-01;
+    z-index: -1;
+    border-bottom: $spacing-01 solid $ui-03;
+  }
+}

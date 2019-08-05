@@ -1,0 +1,26 @@
+@import "./mixins.scss";
+
+.bx--no-gutter {
+  margin-left: $spacing-05;
+}
+
+.main-page__doc-title-header {
+  h1 {
+    @include carbon--type-style("productive-heading-04");
+  }
+  h6 {
+    @include carbon--type-style("body-short-02");
+    line-height: 22px;
+  }
+
+  @include document-title-background;
+  @include document-title-bottom-border;
+
+  .doc-title {
+    padding: $spacing-04 0 $spacing-02 0;
+  }
+}
+
+.profile-tabs {
+  margin-top: $spacing-03;
+}
