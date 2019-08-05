@@ -6,11 +6,12 @@ import {
   Tabs,
   Tab
 } from "carbon-components-react";
-import { tsPropertySignature } from "@babel/types";
+
+import DocumentInfo from "../DocumentInfo";
 
 const props = {
   tabs: {
-    selected: 0,
+    selected: 3,
     triggerHref: "#",
     role: "navigation"
   },
@@ -23,7 +24,7 @@ const props = {
 
 const MainPage = () => {
   return (
-    <div className="bx--grid bx--grid--full-width main-page">
+    <div className="bx--grid bx--grid--full-width bx--no-gutter main-page">
       <div className="bx--row main-page__breadcrumbs">
         <div className="bx--col-lg-16">
           <Breadcrumb className="breadcrumbs" noTrailingSlash={true}>
@@ -50,12 +51,16 @@ const MainPage = () => {
               <div> Review </div>
             </Tab>
             <Tab {...props.tab} label="Profile">
-              <div className="bx--row main-page__doc-title">
-                <h1> something.pdf</h1>
-              </div>
-              <div className="bx--row main-page__document">
-                <div className="bx--col-lg-4">4 columns</div>
-                <div className="bx--col-lg-`12">12 columns</div>
+              <div className="bx--grid bx--grid--no-gutter bx--grid--full-width">
+                <div className="bx--row bx--no-gutter main-page__document">
+                  <div className="bx--col-lg-4">4 columns</div>
+                  <div className="bx--col-lg-8">8 columns</div>
+                </div>
+                <div className="bx--row bx--no-gutter main-page__doc-title">
+                  <div className="bx--col ">
+                    <DocumentInfo />
+                  </div>
+                </div>
               </div>
             </Tab>
             <Tab {...props.tab} label="Lineage">
