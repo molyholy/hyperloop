@@ -19,7 +19,16 @@ const tabProps = {
 const DocumentInfo = props => {
   return (
     <>
-      <div className="bx--row main-page__doc-title-header">
+      <div className="bx--row bx--no-gutter doc_info">
+        <div className="bx--col-lg-6 main-page__doc-title-header">
+          <p>Data Asset</p>
+          <h1>Something.pdf</h1>
+        </div>
+        <div className="bx--col-lg-6">
+          <Button>Please click</Button>
+        </div>
+      </div>
+      {/* <div className="bx--row main-page__doc-title-header">
         <div className="bx--col-lg-7 doc-title">
           <Document16 style={{ float: "left", marginRight: "2px" }} />
           <h6>Data Asset</h6>
@@ -56,7 +65,7 @@ const DocumentInfo = props => {
             <div> Concepts </div>
           </Tab>
         </Tabs>
-      </div>
+      </div> */}
     </>
   );
 };

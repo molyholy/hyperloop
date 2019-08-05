@@ -6,7 +6,7 @@ import {
   Tabs,
   Tab
 } from "carbon-components-react";
-
+import Document16 from "@carbon/icons-react/lib/document/16";
 import DocumentInfo from "../DocumentInfo";
 
 const props = {
@@ -56,11 +56,7 @@ const MainPage = () => {
                   <div className="bx--col-lg-4">4 columns</div>
                   <div className="bx--col-lg-8">8 columns</div>
                 </div>
-                <div className="bx--row bx--no-gutter main-page__doc-title">
-                  <div className="bx--col ">
-                    <DocumentInfo />
-                  </div>
-                </div>
+                <DocumentInfo />
               </div>
             </Tab>
             <Tab {...props.tab} label="Lineage">
