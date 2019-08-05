@@ -1,12 +1,8 @@
 @import "./mixins.scss";
 
-// .bx--no-gutter {
-//   margin-left: $spacing-05;
-// }
-
 .doc_info {
-  padding: $spacing-04 0 $spacing-02 0;
-
+  padding: $spacing-02 0 $spacing-02 0;
+  margin-bottom: $spacing-06;
   @include document-title-background;
   @include document-title-bottom-border;
 }
@@ -19,8 +15,27 @@
     @include carbon--type-style("body-short-02");
     line-height: 22px;
   }
+  padding-top: $spacing-02;
+}
+
+.update-profile-info {
+  padding-top: $spacing-02;
 }
 
 .profile-tabs {
   margin-top: $spacing-03;
 }
+
+.update-profile-info {
+  h6 {
+    margin-right: $spacing-06;
+  }
+}
+
+.categories__tab-content {
+  margin-top: $spacing-08;
+}
+
+// .nested-tabs {
+//   margin-left: -$spacing-09 * 2;
+// }

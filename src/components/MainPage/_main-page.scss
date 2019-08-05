@@ -14,7 +14,14 @@
 }
  */
 .main-page__breadcrumbs {
-  padding-top: $spacing-05;
-  padding-bottom: $spacing-05;
+  padding-top: $spacing-01;
+  padding-bottom: $spacing-01;
   @include breadcrumb-background;
+}
+
+.main-page__tabs {
+  margin-left: 0;
+  margin-right: 0;
+  margin-bottom: -8px;
+  margin-top: 12px;
 }

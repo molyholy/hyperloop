@@ -39,9 +39,9 @@ const MainPage = () => {
         </div>
       </div>
       <div className="bx--row main-page__tabs">
-        <div className="bx--col bx--no-gutter">
+        <div className="bx--offset-lg-1 bx--col-lg-14 bx--no-gutter">
           <Tabs {...props.tabs}>
-            <Tab {...props.tab} label="Overview" style={{ paddingLeft: 16 }}>
+            <Tab {...props.tab} label="Overview">
               <div> Overview </div>
             </Tab>
             <Tab {...props.tab} label="Access">
@@ -52,11 +52,10 @@ const MainPage = () => {
             </Tab>
             <Tab {...props.tab} label="Profile">
               <div className="bx--grid bx--grid--no-gutter bx--grid--full-width">
-                <div className="bx--row bx--no-gutter main-page__document">
-                  <div className="bx--col-lg-4">4 columns</div>
-                  <div className="bx--col-lg-8">8 columns</div>
+                <div className="bx--row main-page__document">
+                  {/* <div className="bx--col-lg-4">4 columns</div>
+                  <div className="bx--col-lg-8">8 columns</div> */}
                 </div>
-                <DocumentInfo />
               </div>
             </Tab>
             <Tab {...props.tab} label="Lineage">

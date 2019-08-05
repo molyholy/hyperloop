@@ -4,6 +4,7 @@ import "./App.scss";
 import { Content } from "carbon-components-react/lib/components/UIShell";
 import StudioHeader from "./components/StudioHeader";
 import MainPage from "./components/MainPage";
+import DocumentInfo from "./components/DocumentInfo";
 
 class App extends Component {
   render() {
@@ -13,6 +14,7 @@ class App extends Component {
 
         <Content>
           <MainPage />
+          <DocumentInfo />
           <br />
           <br />
           <br />

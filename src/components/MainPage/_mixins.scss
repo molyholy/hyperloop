@@ -6,7 +6,7 @@
     //appends parent => parent::before which is the standard use of ::before
     content: "";
     position: absolute;
-    left: -$spacing-09;
+    left: -$spacing-07 * 4;
     top: 0;
     right: -$spacing-05;
     bottom: 0;

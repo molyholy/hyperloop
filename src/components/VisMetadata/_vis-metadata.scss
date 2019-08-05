@@ -1,0 +1,31 @@
+a {
+  text-decoration: none;
+  display: block;
+  margin-top: $spacing-03;
+  margin-bottom: $spacing-03;
+}
+
+h6 {
+  // Entity/category title
+  margin-bottom: $spacing-02;
+  @include carbon--type-style("label-01");
+}
+
+h3 {
+  // the weird file path
+  margin-bottom: $spacing-05;
+  @include carbon--type-style("productive-heading-04");
+}
+
+h5 {
+  //the numbers and stuff
+  margin-bottom: $spacing-05;
+  @include carbon--type-style("body-short-01");
+}
+
+h4 {
+  //related headings
+  margin-top: $spacing-06;
+  margin-bottom: $spacing-03;
+  @include carbon--type-style("productive-heading-02");
+}
