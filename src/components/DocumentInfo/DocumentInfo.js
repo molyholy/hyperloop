@@ -57,7 +57,7 @@ const DocumentInfo = props => {
                     <div className="bx--col-lg-1 bx--no-gutter">
                       <FilterBox />
                     </div>
-                    <div className="bx--col-lg-7 bx--no-gutter--right graph">
+                    <div className="bx--col-lg-7 graph">
                       <div>fdkfjdkj</div>
                     </div>
                     <div className="bx--col-lg-4 graph-details">

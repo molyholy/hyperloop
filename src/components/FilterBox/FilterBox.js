@@ -5,7 +5,7 @@ const FilterBox = props => {
   return (
     <>
       <div id="filterTile">
-        <Tile>
+        <Tile style={{ marginLeft: "-16px" }}>
           <h2> Filter By</h2>
           <br />
           <RadioButton
