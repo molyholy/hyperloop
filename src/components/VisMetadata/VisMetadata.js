@@ -4,7 +4,7 @@ const VisMetadata = props => {
   return (
     <>
       <div className="bx--grid bx--no-gutter">
-        <div className="bx--row ">
+        <div className="bx--row bx--no-gutter ">
           <div className="bx--col-lg-5  graph-details">
             <h6>{props.title}</h6>
             <h3>{props.subtitle}</h3>
@@ -13,7 +13,7 @@ const VisMetadata = props => {
           </div>
         </div>
         {props.isCustom ? null : (
-          <div className="bx--row">
+          <div className="bx--row bx--no-gutter">
             <div className="bx--col-lg-4 ">
               <h4>Related Keywords</h4>
               <a href="#">Unruly Annotation</a>

@@ -54,13 +54,13 @@ const DocumentInfo = props => {
               <Tab {...tabProps.tab} label="Categories">
                 <div className="bx--grid bx--grid--full-width ">
                   <div className="bx--row categories__tab-content">
-                    <div className="bx--col-lg-2 bx--no-gutter">
+                    <div className="bx--col-lg-1 bx--no-gutter">
                       <FilterBox />
                     </div>
-                    <div className="bx--col-lg-5 bx--no-gutter graph">
+                    <div className="bx--col-lg-7 bx--no-gutter--right graph">
                       <div>fdkfjdkj</div>
                     </div>
-                    <div className="bx--col-lg-5 bx--no-gutter graph-details">
+                    <div className="bx--col-lg-4 graph-details">
                       <VisMetadata
                         title="CATEGORY"
                         subtitle="/technology and computing/software/databases"
