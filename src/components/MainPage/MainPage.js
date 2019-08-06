@@ -39,10 +39,7 @@ const MainPage = () => {
         </div>
       </div>
       <div className="bx--row main-page__tabs">
-        <div
-          className="bx--col-lg-14 bx--no-gutter"
-          style={{ paddingLeft: "48px" }}
-        >
+        <div className="bx--col-lg-14 bx--no-gutter">
           <Tabs {...props.tabs}>
             <Tab {...props.tab} label="Overview" />
             <Tab {...props.tab} label="Access" />

@@ -59,12 +59,12 @@ const DocumentInfo = props => {
         </div>
 
         <div className="bx--row nested-tabs">
-          <div className="bx--col " style={{ paddingLeft: "32px" }}>
+          <div className="bx--col ">
             <Tabs {...tabProps.tabs}>
               <Tab {...tabProps.tab} label="Categories">
                 <div className="bx--grid bx--grid--full-width ">
                   <div className="bx--row categories__tab-content">
-                    <div className="bx--col-lg-1 bx--no-gutter">
+                    <div className="bx--col-lg-1 bx--no-gutter tile-column">
                       <FilterBox />
                     </div>
                     <div className="bx--col-lg-7 graph">

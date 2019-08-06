@@ -5,6 +5,13 @@
   margin-bottom: $spacing-06;
   @include document-title-background;
   @include document-title-bottom-border;
+  @media only screen and (max-width: 1056px) {
+    .update-profile-info {
+      padding-left: $layout-05;
+      margin-top: $spacing-03;
+      margin-bottom: $spacing-03;
+    }
+  }
 }
 
 .main-page__doc-title-header {
@@ -38,11 +45,25 @@
   margin-top: $spacing-08;
 }
 
+.nested-tabs {
+  padding-left: $spacing-07;
+}
+
 .graph {
   padding: 0 $layout-04 0 $layout-04;
   margin-top: -44px;
 }
+@media only screen and (max-width: 1056px) {
+  .graph {
+    padding: 0 $layout-04 0 $layout-04;
+    margin-top: 0;
+  }
 
-// .nested-tabs {
-//   margin-left: -$spacing-09 * 2;
-// }
+  .nested-tabs {
+    padding-left: $spacing-05;
+  }
+
+  .tile-column {
+    padding-left: $spacing-05;
+  }
+}

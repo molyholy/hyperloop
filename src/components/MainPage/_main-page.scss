@@ -14,8 +14,8 @@
 }
  */
 .main-page__breadcrumbs {
-  padding-top: $spacing-01;
-  padding-bottom: $spacing-01;
+  padding-top: $spacing-03;
+  padding-bottom: $spacing-03;
   @include breadcrumb-background;
 }
 
@@ -24,4 +24,12 @@
   margin-right: 0;
   margin-bottom: -8px;
   margin-top: 12px;
+  padding-left: $spacing-09;
+}
+@media only screen and (max-width: 1056px) {
+  .main-page__tabs {
+    margin-top: $spacing-03;
+    margin-bottom: $spacing-03;
+    padding-left: $spacing-04;
+  }
 }
