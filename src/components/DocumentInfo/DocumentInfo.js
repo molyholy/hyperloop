@@ -24,11 +24,11 @@ const DocumentInfo = props => {
     <>
       <div className="bx--grid bx--grid--full-width bx--no-gutter">
         <div className="bx--row  doc_info">
-          <div className="bx--offset-lg-1 bx--col-lg-7 main-page__doc-title-header">
+          <div className="bx--col-lg-8 main-page__doc-title-header">
             <p>Data Asset</p>
             <h1>Big Ideas_Detailed Concepts.pdf</h1>
           </div>
-          <div className="bx--col-lg-4 update-profile-info">
+          <div className="bx--col-lg-4 update-profile-info bx--no-gutter">
             <InformationFilled16
               style={{
                 position: "relative",
@@ -66,6 +66,17 @@ const DocumentInfo = props => {
                         subtitle="/technology and computing/software/databases"
                         details="Relevance: 83%"
                         isCustom={false}
+                        links={[
+                          "Unruly Annotation",
+                          "Privacy Policy",
+                          "Faster Workflow",
+                          "Data Governance",
+                          "Steward",
+                          "WKC",
+                          "enterprise",
+                          "technology/data",
+                          "management"
+                        ]}
                       />
                     </div>
                   </div>
@@ -76,13 +87,46 @@ const DocumentInfo = props => {
                 <div> Keywords </div>
               </Tab>
               <Tab {...tabProps.tab} label="Entities">
-                <div> Entities </div>
+                <div className="bx--grid bx--grid--full-width ">
+                  <div className="bx--row categories__tab-content">
+                    <div className="bx--col-lg-1 bx--no-gutter">
+                      <FilterBox />
+                    </div>
+                    <div className="bx--col-lg-7 graph">
+                      <div>fdkfjdkj</div>
+                    </div>
+                    <div className="bx--col-lg-4 graph-details">
+                      <VisMetadata
+                        title="ENTITY"
+                        subtitle="Governance and Privacy"
+                        details={
+                          "Type: Job Title \n Count: 7 \n Relevance: 79%"
+                        }
+                        isCustom={false}
+                        links={[
+                          "Unruly Annotation",
+                          "Privacy Policy",
+                          "Faster Workflow",
+                          "Data Governance",
+                          "Steward",
+                          "WKC",
+                          "enterprise",
+                          "technology/data",
+                          "management"
+                        ]}
+                      />
+                    </div>
+                  </div>
+                </div>
               </Tab>
               <Tab {...tabProps.tab} label="Emotion">
                 <div>Emotion</div>
               </Tab>
               <Tab {...tabProps.tab} label="Concepts">
                 <div> Concepts </div>
+              </Tab>
+              <Tab {...tabProps.tab} label="Custom">
+                <div> Custom </div>
               </Tab>
             </Tabs>
           </div>

@@ -14,29 +14,30 @@ const VisMetadata = props => {
         </div>
         {props.isCustom ? null : (
           <div className="bx--row bx--no-gutter">
-            <div className="bx--col-lg-4 ">
+            <div className="bx--col-lg-4 " id="related-keywords">
               <h4>Related Keywords</h4>
-              <a href="#">Unruly Annotation</a>
 
-              <a href="#">Privacy Policy</a>
+              <a href="#">{props.links[0]}</a>
 
-              <a href="#">Faster Workflow</a>
+              <a href="#">{props.links[1]}</a>
+
+              <a href="#">{props.links[2]}</a>
             </div>
             <div className="bx--col-lg-4 ">
               <h4>Related Concepts</h4>
-              <a href="/">Data Governance</a>
+              <a href="/">{props.links[3]}</a>
 
-              <a href="#">Steward</a>
+              <a href="#">{props.links[4]}</a>
 
-              <a href="#">WKC</a>
+              <a href="#">{props.links[5]}</a>
             </div>
             <div className="bx--col-lg-4 r">
               <h4>Related Categories</h4>
-              <a href="#">enterprise</a>
+              <a href="#">{props.links[6]}</a>
 
-              <a href="#">technology/data</a>
+              <a href="#">{props.links[7]}</a>
 
-              <a href="#">management</a>
+              <a href="#">{props.links[8]}</a>
             </div>
           </div>
         )}
