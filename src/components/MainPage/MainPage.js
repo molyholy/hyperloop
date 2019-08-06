@@ -44,15 +44,9 @@ const MainPage = () => {
           style={{ paddingLeft: "48px" }}
         >
           <Tabs {...props.tabs}>
-            <Tab {...props.tab} label="Overview">
-              <div> Overview </div>
-            </Tab>
-            <Tab {...props.tab} label="Access">
-              <div> Access </div>
-            </Tab>
-            <Tab {...props.tab} label="Review">
-              <div> Review </div>
-            </Tab>
+            <Tab {...props.tab} label="Overview" />
+            <Tab {...props.tab} label="Access" />
+            <Tab {...props.tab} label="Review" />
             <Tab {...props.tab} label="Profile">
               <div className="bx--grid bx--grid--no-gutter bx--grid--full-width">
                 <div className="bx--row main-page__document">
@@ -61,9 +55,7 @@ const MainPage = () => {
                 </div>
               </div>
             </Tab>
-            <Tab {...props.tab} label="Lineage">
-              <div> Lineage </div>
-            </Tab>
+            <Tab {...props.tab} label="Lineage" />
           </Tabs>
         </div>
       </div>

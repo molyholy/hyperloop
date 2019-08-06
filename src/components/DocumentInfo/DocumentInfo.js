@@ -1,10 +1,12 @@
 import React from "react";
-import Document16 from "@carbon/icons-react/lib/document/16";
+//import Document16 from "@carbon/icons-react/lib/document/16";
 import { Button, Tabs, Tab } from "carbon-components-react";
-import CategoryTab from "../CategoryTab";
+
 import InformationFilled16 from "@carbon/icons-react/lib/information--filled/16";
+import Folder16 from "@carbon/icons-react/lib/folder/16";
 import FilterBox from "../FilterBox";
 import VisMetadata from "../VisMetadata";
+import BarChart from "../BarChart";
 
 const tabProps = {
   tabs: {
@@ -25,7 +27,15 @@ const DocumentInfo = props => {
       <div className="bx--grid bx--grid--full-width bx--no-gutter">
         <div className="bx--row  doc_info">
           <div className="bx--col-lg-8 main-page__doc-title-header">
-            <p>Data Asset</p>
+            <Folder16
+              style={{
+                display: "inline",
+                position: "relative",
+                top: "2px",
+                marginRight: "4px"
+              }}
+            />
+            <p style={{ display: "inline" }}>Data Asset</p>
             <h1>Big Ideas_Detailed Concepts.pdf</h1>
           </div>
           <div className="bx--col-lg-4 update-profile-info bx--no-gutter">
@@ -58,7 +68,14 @@ const DocumentInfo = props => {
                       <FilterBox />
                     </div>
                     <div className="bx--col-lg-7 graph">
-                      <div>fdkfjdkj</div>
+                      <BarChart
+                        categories={[
+                          "technology & computing/software/databases",
+                          "data management",
+                          "technology & computing/interrnet technology/web search/people search"
+                        ]}
+                        data={[100, 90, 80]}
+                      />
                     </div>
                     <div className="bx--col-lg-4 graph-details">
                       <VisMetadata

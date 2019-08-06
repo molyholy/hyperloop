@@ -20,7 +20,7 @@ import {
   SideNavMenuItem
 } from "carbon-components-react/lib/components/UIShell";
 
-import UserAvatar20 from "@carbon/icons-react/lib/user--avatar/20";
+//import UserAvatar20 from "@carbon/icons-react/lib/user--avatar/20";
 
 const Fade16 = () => (
   <svg
@@ -38,7 +38,7 @@ const StudioHeader = () => (
   <Header aria-label="IBM Platform Name">
     <SkipToContent />
     <HeaderName href="#" prefix="IBM">
-      [Platform]
+      Watson Studio
     </HeaderName>
     <HeaderGlobalBar>
       <div
