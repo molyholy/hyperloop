@@ -7,6 +7,7 @@ import Folder16 from "@carbon/icons-react/lib/folder/16";
 import FilterBox from "../FilterBox";
 import VisMetadata from "../VisMetadata";
 import BarChart from "../BarChart";
+import UpdateProfileModal from "../UpdateProfileModal";
 
 const tabProps = {
   tabs: {
@@ -38,7 +39,7 @@ const DocumentInfo = props => {
             <p style={{ display: "inline" }}>Data Asset</p>
             <h1>Big Ideas_Detailed Concepts.pdf</h1>
           </div>
-          <div className="bx--col-lg-4 update-profile-info bx--no-gutter">
+          <div className="bx--col-lg-2 update-profile-info bx--no-gutter">
             <InformationFilled16
               style={{
                 position: "relative",
@@ -48,13 +49,24 @@ const DocumentInfo = props => {
             />
             <h6
               style={{
-                display: "inline",
-                verticalAlign: "middle"
+                display: "inline"
               }}
             >
               Last Profiled Jul 24, 2019 4:22 PM
             </h6>
-            <Button className="bx--btn--tertiary">Update Profile</Button>
+            {/* <Button
+              className="bx--btn--tertiary"
+              data-modal-target="#update-profile-modal"
+              type="button"
+            >
+              Update Profile
+            </Button> */}
+          </div>
+          {/* <div className="bx--col-lg-1 bx--no-gutter update-profile-modal">
+            <UpdateProfileModal />
+          </div> */}
+          <div className="bx--col-lg-2 bx--no-gutter update-profile-button">
+            <UpdateProfileModal />
           </div>
         </div>
 
@@ -84,17 +96,28 @@ const DocumentInfo = props => {
                         details="Relevance: 83%"
                         isCustom={false}
                         links={[
-                          "Unruly Annotation",
-                          "Privacy Policy",
-                          "Faster Workflow",
+                          "Annotation",
+                          "Unstructured Data",
+                          "Task Setting",
+                          "Data Management",
+                          "Data Mining",
+                          "Tool",
                           "Data Governance",
                           "Steward",
-                          "WKC",
-                          "enterprise",
-                          "technology/data",
-                          "management"
+                          "WKC"
                         ]}
                       />
+                      <br />
+                      <br />
+                      <br />
+                      <br />
+                      <br />
+                      <br />
+                      <br />
+                      <br />
+                      <br />
+                      <br />
+                      {/**Lol*/}
                     </div>
                   </div>
                 </div>
@@ -110,7 +133,17 @@ const DocumentInfo = props => {
                       <FilterBox />
                     </div>
                     <div className="bx--col-lg-7 graph">
-                      <div>fdkfjdkj</div>
+                      <BarChart
+                        categories={[
+                          "Governance and Privacy",
+                          "Steward",
+                          "WKC",
+                          "TSA",
+                          "IBM",
+                          "Indiana Jones"
+                        ]}
+                        data={[7, 6, 5, 4, 3, 2]}
+                      />
                     </div>
                     <div className="bx--col-lg-4 graph-details">
                       <VisMetadata
@@ -132,6 +165,17 @@ const DocumentInfo = props => {
                           "management"
                         ]}
                       />
+                      <br />
+                      <br />
+                      <br />
+                      <br />
+                      <br />
+                      <br />
+                      <br />
+                      <br />
+                      <br />
+                      <br />
+                      {/**Lol*/}
                     </div>
                   </div>
                 </div>

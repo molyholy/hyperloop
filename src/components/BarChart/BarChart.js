@@ -4,59 +4,7 @@ import Chart from "react-apexcharts";
 class BarChart extends React.Component {
   constructor(props) {
     super(props);
-    // this.state = {
-    //   options: {
-    //     plotOptions: {
-    //       bar: {
-    //         horizontal: true,
-    //         distributed: true
-    //       }
-    //     },
-    //     colors: ["#0062FF"],
-    //     tooltip: {
-    //       enabled: false
-    //     },
-    //     dataLabels: {
-    //       enabled: true,
-    //       offsetX: 0,
 
-    //       textAnchor: "start",
-    //       formatter: function(val, opt) {
-    //         return "dfd";
-    //       },
-    //       style: {
-    //         fontSize: "16px",
-    //         fontFamily: "IBM Plex Sans"
-    //       }
-    //     },
-    //     chart: {
-    //       toolbar: {
-    //         show: false
-    //       },
-    //       fontFamily: "IBM Plex Sans, sans-serif"
-    //     },
-
-    //     xaxis: {
-    //       categories: props.categories,
-    //       axisTicks: {
-    //         show: false
-    //       }
-    //     },
-    //     yaxis: {
-    //       labels: {
-    //         show: false
-    //       }
-    //     },
-    //     grid: {
-    //       show: false
-    //     }
-    //   },
-    //   series: [
-    //     {
-    //       data: props.data
-    //     }
-    //   ]
-    // };
     this.state = {
       options: {
         plotOptions: {

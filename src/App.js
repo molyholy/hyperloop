@@ -16,6 +16,16 @@ class App extends Component {
           <MainPage />
           <DocumentInfo />
         </Content>
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
       </>
     );
   }

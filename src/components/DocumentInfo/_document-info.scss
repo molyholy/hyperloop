@@ -11,6 +11,9 @@
       margin-top: $spacing-03;
       margin-bottom: $spacing-03;
     }
+    .update-profile-button {
+      padding-left: $layout-05;
+    }
   }
 }
 
@@ -27,8 +30,7 @@
 }
 
 .update-profile-info {
-  padding-top: $spacing-02;
-  //padding-left: $layout-05;
+  padding-top: $spacing-06;
 }
 
 .profile-tabs {
@@ -38,6 +40,12 @@
 .update-profile-info {
   h6 {
     margin-right: $spacing-06;
+  }
+}
+.update-profile-button {
+  padding-top: $spacing-04;
+  .bx--btn {
+    margin-bottom: $spacing-03;
   }
 }
 
@@ -53,6 +61,7 @@
   padding: 0 $layout-04 0 $layout-04;
   margin-top: -44px;
 }
+
 @media only screen and (max-width: 1056px) {
   .graph {
     padding: 0 $layout-04 0 $layout-04;
