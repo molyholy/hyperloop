@@ -5,7 +5,7 @@
   "dependencies": {
     "@carbon/grid": "^10.4.0",
     "@carbon/icons-react": "^10.4.1",
-    "apexcharts": "^3.8.4",
+    "apexcharts": "^3.24.0",
     "carbon-components": "^10.4.1",
     "carbon-components-react": "^7.4.1",
     "d3": "^5.9.7",
